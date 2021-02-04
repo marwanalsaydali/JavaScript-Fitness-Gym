@@ -1,0 +1,28 @@
+{
+  "name": "javascript-fitness-gym",
+  "version": "1.0.0",
+  "description": "building my JavaScript Muscles",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marwanalsaydali/JavaScript-Fitness-Gym.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Marwan Alsaydali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marwanalsaydali/JavaScript-Fitness-Gym/issues"
+  },
+  "homepage": "https://github.com/marwanalsaydali/JavaScript-Fitness-Gym#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.3.1"
+  }
+}
