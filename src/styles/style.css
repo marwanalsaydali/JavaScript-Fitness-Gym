@@ -1,0 +1,18 @@
+:root {
+  /* color plate */
+  --yellow-primary: #ffc600;
+  --black-lighter: #1d425d;
+  --black-solid: #000;
+  --white-darker: #f5f5f5;
+  --white-solid: #fff;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--white-darker);
+}
