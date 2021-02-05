@@ -10,9 +10,11 @@
   --grey-solid: #576574;
   --grey-dark: #222f3e;
   --font-f-h: futura-pt-condensed, sans-serif;
-  --font-s-h: 72px;
   --box-r: 15px;
   --gap: 10px;
+  --font-base: 62.5%;
+  --font-s-h: 4rem;
+  --font-s-h3: 2rem;
 }
 *,
 *::after,
@@ -24,42 +26,65 @@
 body {
   background-color: var(--white-darker);
   font-family: var(--font-f-h);
-  font-size: 62.5%;
+  font-size: var(--font-base);
 }
 main {
-  max-width: 1200px;
+  width: 100%;
+  padding: var(--gap);
   margin: 0 auto;
 }
 h1 {
-  font-family: var(--font-f-h);
+  font-size: var(--font-s-h);
+}
+h3 {
+  font-size: var(--font-s-h3);
+}
+h1,
+h3 {
   font-weight: 700;
   font-style: italic;
-  font-size: var(--font-s-h);
   color: var(--yellow-light);
   background: -webkit-linear-gradient(var(--yellow-dark), var(--yellow-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1;
 }
-[role="tablist"] {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: var(--gap);
+@media (min-width: 640px) {
+  :root {
+    --font-s-h: 5rem;
+    --font-s-h3: 3rem;
+  }
+  main {
+    max-width: 640px;
+  }
 }
-button[role="tab"] {
-  padding: 10px 0;
-  background-color: var(--yellow-light);
-  outline: none;
-  border: 0;
-  border-radius: var(--box-r);
-  color: var(--white-solid);
+@media (min-width: 768px) {
+  :root {
+    --font-s-h: 6rem;
+    --font-s-h3: 4rem;
+    --font-base: 1.2rem;
+  }
+  main {
+    max-width: 768px;
+  }
 }
-button[aria-selected="true"] {
-  background-color: var(--yellow-dark);
+@media (min-width: 1024px) {
+  :root {
+    --font-s-h: 7rem;
+    --font-s-h3: 5rem;
+    --font-base: 1.5rem;
+  }
+  main {
+    max-width: 1024px;
+  }
 }
-.tabs [role="tabpanel"] {
-  background-color: var(--white-solid);
-  margin-top: var(--gap);
-  padding: var(--gap);
-  border-radius: var(--box-r);
+@media (min-width: 1280px) {
+  :root {
+    --font-s-h: 8rem;
+  }
+  main {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
 }

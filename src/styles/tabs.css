@@ -1,0 +1,28 @@
+.tabs {
+  margin-top: var(--gap);
+}
+[role="tablist"] {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--gap);
+}
+button[role="tab"] {
+  padding: 10px 0;
+  background-color: var(--yellow-light);
+  outline: none;
+  border: 0;
+  border-radius: var(--box-r);
+  color: var(--white-solid);
+  font-family: var(--font-f-h);
+  font-size: var(--font-base);
+}
+button[aria-selected="true"] {
+  background-color: var(--yellow-dark);
+}
+.tabs [role="tabpanel"] {
+  background-color: var(--white-solid);
+  margin-top: var(--gap);
+  padding: var(--gap);
+  border-radius: var(--box-r);
+}
