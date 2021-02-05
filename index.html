@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/xds6yrj.css" />
     <title>JavaScript Fitness Gym</title>
   </head>
   <body>
-    <section class="tabs"></section>
+    <header>
+      <h1>JavaScript</h1>
+    </header>
+    <main>
+      <section id="tabs">
+        <div class="tabs">
+          <div role="tablist" aria-label="Social Media">
+            <button role="tab" aria-selected="true" id="ig">Instagram</button>
+            <button role="tab" aria-selected="false" id="tweet">Twitter</button>
+            <button role="tab" aria-selected="false" id="in">LinkedIn</button>
+          </div>
+          <div role="tabpanel" aria-labelledby="ig">Instagram</div>
+          <div role="tabpanel" aria-labelledby="tweet" hidden>Twitter</div>
+          <div role="tabpanel" aria-labelledby="in" hidden>LinkedIn</div>
+        </div>
+      </section>
+    </main>
+
     <script src="./index.js"></script>
   </body>
 </html>
